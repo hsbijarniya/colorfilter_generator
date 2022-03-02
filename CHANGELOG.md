@@ -1,3 +1,7 @@
+## 0.0.7
+
+* Added github repository.
+
 ## 0.0.6
 
 * Optimization
