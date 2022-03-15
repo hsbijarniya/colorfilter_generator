@@ -14,7 +14,7 @@ class ColorFilterAddons {
   //     alpha: color.alpha,
   //   );
   // }
-  // color.red(1 - scale) - red * scale
+  /// color(1 - scale) - color * scale
   static List<double> colorOverlay(
       double red, double green, double blue, double scale) {
     return [
@@ -91,7 +91,7 @@ class ColorFilterAddons {
     ];
   }
 
-  // (0.2126 * color.red + 0.7152 * color.green + 0.0722 * color.blue)
+  /// (0.2126 * color.red + 0.7152 * color.green + 0.0722 * color.blue)
   static List<double> grayscale() {
     return [
       0.2126,
@@ -146,6 +146,7 @@ class ColorFilterAddons {
     ];
   }
 
+  /// Invert the colors
   static List<double> invert() {
     return [
       -1,
@@ -171,6 +172,7 @@ class ColorFilterAddons {
     ];
   }
 
+  /// Brightness adjustment
   static List<double> brightness(double value) {
     if (value <= 0) {
       value = value * 255;
@@ -227,6 +229,7 @@ class ColorFilterAddons {
     ]).map((i) => i.toDouble()).toList();
   }
 
+  /// Contrast adjustment
   static List<double> contrast(double value) {
     // RGBA contrast(RGBA color, num adj) {
     //   adj *= 255;
@@ -265,6 +268,7 @@ class ColorFilterAddons {
     ];
   }
 
+  /// Hue adjustment
   static List<double> hue(double value) {
     value = value * pi;
 
@@ -323,6 +327,7 @@ class ColorFilterAddons {
     ]).map((i) => i.toDouble()).toList();
   }
 
+  /// Saturation adjustment
   static List<double> saturation(double value) {
     value = value * 100;
 

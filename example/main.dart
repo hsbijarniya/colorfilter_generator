@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:colorfilter_generator/addons.dart';
 
-void main() => runApp(MaterialApp(home: MyApp()));
+void main() {
+  runApp(
+    const MaterialApp(
+      home: MyApp(),
+    ),
+  );
+}
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

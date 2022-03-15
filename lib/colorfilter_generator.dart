@@ -1,8 +1,9 @@
 library colorfilter_generator;
 
+import 'package:flutter/material.dart';
 import 'package:matrix2d/matrix2d.dart';
 
-///The [ColorFilterGenerator] class to define a Filter which will applied to each color, consists of multiple [SubFilter]s
+/// The [ColorFilterGenerator] class to define a Filter which will applied to each color, consists of multiple [SubFilter]s
 class ColorFilterGenerator {
   String name;
   List<List<double>> filters;
@@ -41,6 +42,7 @@ class ColorFilterGenerator {
   // | a20 a21 a22 a33 a44 | * | a20 a21 a22 a33 a44 |
   // | a30 a31 a22 a33 a44 |   | a30 a31 a22 a33 a44 |
   // |  0   0   0   0   1  |   |  0   0   0   0   1  |
+  /// Build matrix of current filter
   void buildMatrix() {
     if (filters.isEmpty) {
       return;
@@ -49,7 +51,7 @@ class ColorFilterGenerator {
     Matrix2d m2d = const Matrix2d();
 
     List result = m2d.reshape([filters[0]], 4, 5);
-    List listA = m2d.reshape([filters[0]], 4, 5);
+    // List listA = m2d.reshape([filters[0]], 4, 5);
 
     for (int i = 1; i < filters.length; i++) {
       List listB = [
@@ -63,8 +65,8 @@ class ColorFilterGenerator {
         1,
       ];
 
-      print(listA);
-      print(listB);
+      // print(listA);
+      // print(listB);
 
       result = m2d.dot(
         result,
@@ -75,6 +77,7 @@ class ColorFilterGenerator {
     matrix = List<double>.from(result.flatten.sublist(0, 20));
   }
 
+  /// Create new filter from this filter with given opacity
   ColorFilterGenerator opacity(double value) {
     return ColorFilterGenerator(name: name, filters: [
       ...filters,
@@ -101,5 +104,19 @@ class ColorFilterGenerator {
         0,
       ],
     ]);
+  }
+
+  /// Apply filter to given child
+  Widget build(Widget child) {
+    Widget tree = child;
+
+    for (int i = 0; i < filters.length; i++) {
+      tree = ColorFiltered(
+        colorFilter: ColorFilter.matrix(filters[i]),
+        child: tree,
+      );
+    }
+
+    return tree;
   }
 }

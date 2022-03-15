@@ -1,15 +1,15 @@
 import 'package:colorfilter_generator/addons.dart';
 import 'package:colorfilter_generator/colorfilter_generator.dart';
 
-// Preset filters that can be used directly
+/// Preset filters that can be used directly
 class PresetFilters {
-  // NoFilter: No filter
+  /// NoFilter: No filter
   static ColorFilterGenerator none = ColorFilterGenerator(
     name: "No Filter",
     filters: [],
   );
 
-  // Clarendon: adds light to lighter areas and dark to darker areas
+  /// Clarendon: adds light to lighter areas and dark to darker areas
   static ColorFilterGenerator clarendon = ColorFilterGenerator(
     name: "Clarendon",
     filters: [
@@ -19,6 +19,7 @@ class PresetFilters {
     ],
   );
 
+  /// Increase red color gradient
   static ColorFilterGenerator addictiveRed = ColorFilterGenerator(
     name: "AddictiveRed",
     filters: [
@@ -26,6 +27,7 @@ class PresetFilters {
     ],
   );
 
+  /// Increase blue color gradient
   static ColorFilterGenerator addictiveBlue = ColorFilterGenerator(
     name: "AddictiveBlue",
     filters: [
@@ -33,7 +35,7 @@ class PresetFilters {
     ],
   );
 
-  // Gingham: Vintage-inspired, taking some color out
+  /// Gingham: Vintage-inspired, taking some color out
   static ColorFilterGenerator gingham = ColorFilterGenerator(
     name: "Gingham",
     filters: [
@@ -42,7 +44,7 @@ class PresetFilters {
     ],
   );
 
-  // Moon: B/W, increase brightness and decrease contrast
+  /// Moon: B/W, increase brightness and decrease contrast
   static ColorFilterGenerator moon = ColorFilterGenerator(
     name: "Moon",
     filters: [
@@ -52,7 +54,7 @@ class PresetFilters {
     ],
   );
 
-  // Lark: Brightens and intensifies colours but not red hues
+  /// Lark: Brightens and intensifies colours but not red hues
   static ColorFilterGenerator lark = ColorFilterGenerator(
     name: "Lark",
     filters: [
@@ -62,7 +64,7 @@ class PresetFilters {
     ],
   );
 
-  // Reyes: a vintage filter, gives your photos a “dusty” look
+  /// Reyes: a vintage filter, gives your photos a “dusty” look
   static ColorFilterGenerator reyes = ColorFilterGenerator(
     name: "Reyes",
     filters: [
@@ -72,7 +74,7 @@ class PresetFilters {
     ],
   );
 
-  // Juno: Brightens colors, and intensifies red and yellow hues
+  /// Juno: Brightens colors, and intensifies red and yellow hues
   static ColorFilterGenerator juno = ColorFilterGenerator(
     name: "Juno",
     filters: [
@@ -81,7 +83,7 @@ class PresetFilters {
     ],
   );
 
-  // Slumber: Desaturates the image as well as adds haze for a retro, dreamy look – with an emphasis on blacks and blues
+  /// Slumber: Desaturates the image as well as adds haze for a retro, dreamy look – with an emphasis on blacks and blues
   static ColorFilterGenerator slumber = ColorFilterGenerator(
     name: "Slumber",
     filters: [
@@ -90,7 +92,7 @@ class PresetFilters {
     ],
   );
 
-  // Crema: Adds a creamy look that both warms and cools the image
+  /// Crema: Adds a creamy look that both warms and cools the image
   static ColorFilterGenerator crema = ColorFilterGenerator(
     name: "Crema",
     filters: [
@@ -99,7 +101,7 @@ class PresetFilters {
     ],
   );
 
-  // Ludwig: A slight hint of desaturation that also enhances light
+  /// Ludwig: A slight hint of desaturation that also enhances light
   static ColorFilterGenerator ludwig = ColorFilterGenerator(
     name: "Ludwig",
     filters: [
@@ -108,7 +110,7 @@ class PresetFilters {
     ],
   );
 
-  // Aden: This filter gives a blue/pink natural look
+  /// Aden: This filter gives a blue/pink natural look
   static ColorFilterGenerator aden = ColorFilterGenerator(
     name: "Aden",
     filters: [
@@ -117,7 +119,7 @@ class PresetFilters {
     ],
   );
 
-  // Perpetua: Adding a pastel look, this filter is ideal for portraits
+  /// Perpetua: Adding a pastel look, this filter is ideal for portraits
   static ColorFilterGenerator perpetua = ColorFilterGenerator(
     name: "Perpetua",
     filters: [
@@ -125,7 +127,7 @@ class PresetFilters {
     ],
   );
 
-  // Amaro: Adds light to an image, with the focus on the centre
+  /// Amaro: Adds light to an image, with the focus on the centre
   static ColorFilterGenerator amaro = ColorFilterGenerator(
     name: "Amaro",
     filters: [
@@ -134,7 +136,7 @@ class PresetFilters {
     ],
   );
 
-  // Mayfair: Applies a warm pink tone, subtle vignetting to brighten the photograph center and a thin black border
+  /// Mayfair: Applies a warm pink tone, subtle vignetting to brighten the photograph center and a thin black border
   static ColorFilterGenerator mayfair = ColorFilterGenerator(
     name: "Mayfair",
     filters: [
@@ -143,7 +145,7 @@ class PresetFilters {
     ],
   );
 
-  // Rise: Adds a "glow" to the image, with softer lighting of the subject
+  /// Rise: Adds a "glow" to the image, with softer lighting of the subject
   static ColorFilterGenerator rise = ColorFilterGenerator(
     name: "Rise",
     filters: [
@@ -153,7 +155,7 @@ class PresetFilters {
     ],
   );
 
-  // Hudson: Creates an "icy" illusion with heightened shadows, cool tint and dodged center
+  /// Hudson: Creates an "icy" illusion with heightened shadows, cool tint and dodged center
   static ColorFilterGenerator hudson = ColorFilterGenerator(
     name: "Hudson",
     filters: [
@@ -163,7 +165,7 @@ class PresetFilters {
     ],
   );
 
-  // Valencia: Fades the image by increasing exposure and warming the colors, to give it an antique feel
+  /// Valencia: Fades the image by increasing exposure and warming the colors, to give it an antique feel
   static ColorFilterGenerator valencia = ColorFilterGenerator(
     name: "Valencia",
     filters: [
@@ -173,7 +175,7 @@ class PresetFilters {
     ],
   );
 
-  // X-Pro II: Increases color vibrance with a golden tint, high contrast and slight vignette added to the edges
+  /// X-Pro II: Increases color vibrance with a golden tint, high contrast and slight vignette added to the edges
   static ColorFilterGenerator xProII = ColorFilterGenerator(
     name: "X-Pro II",
     filters: [
@@ -183,7 +185,7 @@ class PresetFilters {
     ],
   );
 
-  // Sierra: Gives a faded, softer look
+  /// Sierra: Gives a faded, softer look
   static ColorFilterGenerator sierra = ColorFilterGenerator(
     name: "Sierra",
     filters: [
@@ -192,7 +194,7 @@ class PresetFilters {
     ],
   );
 
-  // Willow: A monochromatic filter with subtle purple tones and a translucent white border
+  /// Willow: A monochromatic filter with subtle purple tones and a translucent white border
   static ColorFilterGenerator willow = ColorFilterGenerator(
     name: "Willow",
     filters: [
@@ -202,7 +204,7 @@ class PresetFilters {
     ],
   );
 
-  // Lo-Fi: Enriches color and adds strong shadows through the use of saturation and "warming" the temperature
+  /// Lo-Fi: Enriches color and adds strong shadows through the use of saturation and "warming" the temperature
   static ColorFilterGenerator loFi = ColorFilterGenerator(
     name: "Lo-Fi",
     filters: [
@@ -211,7 +213,7 @@ class PresetFilters {
     ],
   );
 
-  // Inkwell: Direct shift to black and white
+  /// Inkwell: Direct shift to black and white
   static ColorFilterGenerator inkwell = ColorFilterGenerator(
     name: "Inkwell",
     filters: [
@@ -219,7 +221,7 @@ class PresetFilters {
     ],
   );
 
-  // Hefe: Hight contrast and saturation, with a similar effect to Lo-Fi but not quite as dramatic
+  /// Hefe: Hight contrast and saturation, with a similar effect to Lo-Fi but not quite as dramatic
   static ColorFilterGenerator hefe = ColorFilterGenerator(
     name: "Hefe",
     filters: [
@@ -228,7 +230,7 @@ class PresetFilters {
     ],
   );
 
-  // Nashville: Warms the temperature, lowers contrast and increases exposure to give a light "pink" tint – making it feel "nostalgic"
+  /// Nashville: Warms the temperature, lowers contrast and increases exposure to give a light "pink" tint – making it feel "nostalgic"
   static ColorFilterGenerator nashville = ColorFilterGenerator(
     name: "Nashville",
     filters: [
@@ -237,7 +239,7 @@ class PresetFilters {
     ],
   );
 
-  // Stinson: washing out the colors ever so slightly
+  /// Stinson: washing out the colors ever so slightly
   static ColorFilterGenerator stinson = ColorFilterGenerator(
     name: "Stinson",
     filters: [
@@ -246,7 +248,7 @@ class PresetFilters {
     ],
   );
 
-  // Vesper: adds a yellow tint that
+  /// Vesper: adds a yellow tint that
   static ColorFilterGenerator vesper = ColorFilterGenerator(
     name: "Vesper",
     filters: [
@@ -256,7 +258,7 @@ class PresetFilters {
     ],
   );
 
-  // Earlybird: Gives an older look with a sepia tint and warm temperature
+  /// Earlybird: Gives an older look with a sepia tint and warm temperature
   static ColorFilterGenerator earlybird = ColorFilterGenerator(
     name: "Earlybird",
     filters: [
@@ -265,7 +267,7 @@ class PresetFilters {
     ],
   );
 
-  // Brannan: Increases contrast and exposure and adds a metallic tint
+  /// Brannan: Increases contrast and exposure and adds a metallic tint
   static ColorFilterGenerator brannan = ColorFilterGenerator(
     name: "Brannan",
     filters: [
@@ -274,7 +276,7 @@ class PresetFilters {
     ],
   );
 
-  // Sutro: Burns photo edges, increases highlights and shadows dramatically with a focus on purple and brown colors
+  /// Sutro: Burns photo edges, increases highlights and shadows dramatically with a focus on purple and brown colors
   static ColorFilterGenerator sutro = ColorFilterGenerator(
     name: "Sutro",
     filters: [
@@ -283,7 +285,7 @@ class PresetFilters {
     ],
   );
 
-  // Toaster: Ages the image by "burning" the centre and adds a dramatic vignette
+  /// Toaster: Ages the image by "burning" the centre and adds a dramatic vignette
   static ColorFilterGenerator toaster = ColorFilterGenerator(
     name: "Toaster",
     filters: [
@@ -292,7 +294,7 @@ class PresetFilters {
     ],
   );
 
-  // Walden: Increases exposure and adds a yellow tint
+  /// Walden: Increases exposure and adds a yellow tint
   static ColorFilterGenerator walden = ColorFilterGenerator(
     name: "Walden",
     filters: [
@@ -301,7 +303,7 @@ class PresetFilters {
     ],
   );
 
-  // 1977: The increased exposure with a red tint gives the photograph a rosy, brighter, faded look.
+  /// 1977: The increased exposure with a red tint gives the photograph a rosy, brighter, faded look.
   static ColorFilterGenerator f1977 = ColorFilterGenerator(
     name: "1977",
     filters: [
@@ -310,7 +312,7 @@ class PresetFilters {
     ],
   );
 
-  // Kelvin: Increases saturation and temperature to give it a radiant "glow"
+  /// Kelvin: Increases saturation and temperature to give it a radiant "glow"
   static ColorFilterGenerator kelvin = ColorFilterGenerator(
     name: "Kelvin",
     filters: [
@@ -320,7 +322,7 @@ class PresetFilters {
     ],
   );
 
-  // Maven: darkens images, increases shadows, and adds a slightly yellow tint overal
+  /// Maven: darkens images, increases shadows, and adds a slightly yellow tint overal
   static ColorFilterGenerator maven = ColorFilterGenerator(
     name: "Maven",
     filters: [
@@ -330,7 +332,7 @@ class PresetFilters {
     ],
   );
 
-  // Ginza: brightens and adds a warm glow
+  /// Ginza: brightens and adds a warm glow
   static ColorFilterGenerator ginza = ColorFilterGenerator(
     name: "Ginza",
     filters: [
@@ -339,7 +341,7 @@ class PresetFilters {
     ],
   );
 
-  // Skyline: brightens to the image pop
+  /// Skyline: brightens to the image pop
   static ColorFilterGenerator skyline = ColorFilterGenerator(
     name: "Skyline",
     filters: [
@@ -348,7 +350,7 @@ class PresetFilters {
     ],
   );
 
-  // Dogpatch: increases the contrast, while washing out the lighter colors
+  /// Dogpatch: increases the contrast, while washing out the lighter colors
   static ColorFilterGenerator dogpatch = ColorFilterGenerator(
     name: "Dogpatch",
     filters: [
@@ -357,7 +359,7 @@ class PresetFilters {
     ],
   );
 
-  // Brooklyn
+  /// Brooklyn
   static ColorFilterGenerator brooklyn = ColorFilterGenerator(
     name: "Brooklyn",
     filters: [
@@ -366,7 +368,7 @@ class PresetFilters {
     ],
   );
 
-  // Helena: adds an orange and teal vibe
+  /// Helena: adds an orange and teal vibe
   static ColorFilterGenerator helena = ColorFilterGenerator(
     name: "Helena",
     filters: [
@@ -375,7 +377,7 @@ class PresetFilters {
     ],
   );
 
-  // Ashby: gives images a great golden glow and a subtle vintage feel
+  /// Ashby: gives images a great golden glow and a subtle vintage feel
   static ColorFilterGenerator ashby = ColorFilterGenerator(
     name: "Ashby",
     filters: [
@@ -384,7 +386,7 @@ class PresetFilters {
     ],
   );
 
-  // Charmes: a high contrast filter, warming up colors in your image with a red tint
+  /// Charmes: a high contrast filter, warming up colors in your image with a red tint
   static ColorFilterGenerator charmes = ColorFilterGenerator(
     name: "Charmes",
     filters: [
@@ -394,6 +396,7 @@ class PresetFilters {
   );
 }
 
+/// List of filter presets
 List<ColorFilterGenerator> presetFiltersList = [
   PresetFilters.none,
   PresetFilters.addictiveBlue,

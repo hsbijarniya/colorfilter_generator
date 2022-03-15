@@ -1,6 +1,6 @@
 name: colorfilter_generator
 description: Collection of ColorFilter matrices that can be used with ColorFiltered and generator to create custom color filters.
-version: 0.0.7
+version: 0.0.8
 homepage: https://ensorta.com
 repository: https://github.com/hsbijarniya/colorfilter_generator
 

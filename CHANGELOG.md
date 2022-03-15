@@ -1,3 +1,7 @@
+## 0.0.8
+
+* Implemented build method to apply filter to given child
+
 ## 0.0.7
 
 * Added github repository.
